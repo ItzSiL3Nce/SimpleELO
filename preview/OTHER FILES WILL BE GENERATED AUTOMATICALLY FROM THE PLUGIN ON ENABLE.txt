@@ -1,0 +1,8 @@
+OTHER FILES WILL BE GENERATED AUTOMATICALLY FROM THE PLUGIN ON ENABLE:
+
+data.yml
+signs.yml
+holograms.yml
+
+IF ENABLED just-one-kill:
+ kills.yml
