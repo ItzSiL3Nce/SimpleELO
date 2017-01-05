@@ -1,0 +1,45 @@
+# This option should not bother you, even if you haven't got any PlaceholderAPI.
+# Currently supports only PlaceholderAPI and MVdWPlaceholderAPI 
+enable-placeholders: true
+
+default-elo: 1000
+elo-modificator: 40
+
+prevent-spawn-kill: true
+
+# If you enable this a player that ALREADY killed someone else won't get ELO again.
+just-one-kill: false
+
+new-elo-message:
+ - '&e---------------- [&6ELO&e] ----------------'
+ - '&3{killer}&a: &c{killerprevelo} &a-> &b{killerelo}'
+ - '&3{dead}&a: &c{deadprevelo} &a-> &b{deadelo}'
+ - '&e---------------- [&6ELO&e] ----------------'
+ 
+elo-command:
+ - '&e---------------- [&6ELO&e] ----------------'
+ - '&3{player}''s ELO: &b{elo}'
+ - '&e---------------- [&6ELO&e] ----------------'
+ 
+inexistant-player: '&cThat player does not exist.'
+no-permissions: '&cYou do not have permissions.'
+
+top-players: 10
+top-header: '&e---------------- [&6TOP ELO&e] ----------------'
+top-message: '&3[&f{position}&3] &b{player} &3[&f{elo}&3]'
+top-footer: '&e---------------- [&6TOP ELO&e] ----------------'
+
+sign:
+ line-1: 'Position: &1{position}'
+ line-2: '{player}'
+ line-3: ''
+ line-4: 'ELO: &1{elo}'
+
+hologram:
+ - '&f[&c#{position}&f] &b{player}'
+ - '&6{elo}'
+hologram-item-top3: true
+
+elo-reset: '&aYour ELO has been resetted.'
+
+worldguard-integration: true

@@ -1,0 +1,21 @@
+##############################################################################
+#                                                                            #
+# To use the placeholders you need external plugins that use them.           #
+# For Example: FeatherBoard                                                  #
+#                                                                            #
+##############################################################################
+#                                                                            #
+# PlaceholderAPI's placeholders:                                             #
+#                                                                            #
+# %simpleelo_elo% -> Returns the ELO of the player                           #
+# %simpleelo_position% -> Returns the position in the top list of the player #
+# %simpleelo_topX% -> Returns the player at that X position in the top       #
+#                                                                            #
+##############################################################################
+#                                                                            #
+# MVdWPlaceholderAPI's placeholders:                                         #
+# {elo} -> Returns the ELO of the player                                     #
+# {position} -> Returns the position in the top list of the player           #
+# {topX} -> Returns the player at that X position in the top                 #
+#                                                                            #
+##############################################################################

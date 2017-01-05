@@ -1,0 +1,91 @@
+main: it.ItzSiL3Nce.simpleelo.SimpleELO
+version: 1.7
+author: ItzSiL3Nce
+name: SimpleELO
+softdepend: [HolographicDisplays,WorldGuard,PlaceholderAPI,MVdWPlaceholderAPI]
+commands:
+  elo:
+    usage: /<command> [player=you]
+    description: Shows yours or another player's ELO.
+  topelo:
+    usage: /<command>
+    description: Shows the Top-ELO players.
+    aliases: [tope,etop,elotop,elolist,listelo]
+  eloreload:
+    usage: /<command>
+    description: Reloads ELO's configuration.
+    aliases: [elorl,rlelo,reloadelo]
+  elosign:
+    usage: /<command> <position>
+    description: Sets a sign.
+    aliases: [signelo,esign,signe]
+  eloholo:
+    usage: /<command> <hologram name> <position in top>
+    description: Sets an hologram.
+    aliases: [eholo,holoe,elohologram,ehologram,holograme,elogram]
+  eloholoremove:
+    usage: /<command> <hologram name>
+    description: Removes an hologram.
+    aliases: [eholoremove,removeholo,removehologram,ehologramremove,hologramremove,holoremove,elogramremove]
+  elograms:
+    usage: /<command>
+    description: Shows a list of holograms.
+  eloholohere:
+    usage: /<command> <hologram name>
+    description: Teleports an elogram to your position.
+    aliases: [elogramhere,elohologramhere,hologramhere,hereholo,holohere,herehologram]
+  eloreset:
+    usage: /<command> <player>
+    description: Resets someone's ELO.
+    aliases: [resete,ereset,resetelo]
+  denyelo:
+    usage: /<command> <region>
+    description: Denies ELO in a specified region. Requires WorldGuard.
+    aliases: [elodeny,deny,edeny]
+  allowelo:
+    usage: /<command> <region>
+    description: Allows ELO in a specified region. Requires WorldGuard.
+    aliases: [eloallow,allow,eallow]
+  elogive:
+    usage: /<command> <player> <elo>
+    description: Gives ELO to a player.
+    aliases: [giveelo,givelo,egive]
+  eloset:
+    usage: /<command> <player> <elo>
+    description: Sets a player ELO.
+    aliases: [setelo,eset,set]
+permissions:
+  simpleelo.*:
+    default: op
+    children:
+      simpleelo.elo.*: true
+      simpleelo.top: true
+      simpleelo.reload: true
+      simpleelo.sign: true
+      simpleelo.hologram: true
+      simpleelo.reset: true
+      simpleelo.set: true
+      simpleelo.give: true
+  simpleelo.elo.*:
+    default: op
+    children:
+      simpleelo.elo: true
+      simpleelo.elo.others: true
+  simpleelo.elo:
+    default: true
+  simpleelo.elo.others:
+    default: op
+  simpleelo.top:
+    default: true
+  simpleelo.reload:
+    default: op
+  simpleelo.sign:
+    default: op
+  simpleelo.hologram:
+    default: op
+  simpleelo.reset:
+    default: op
+  simpleelo.set:
+    default: op
+  simpleelo.give:
+    default: op
