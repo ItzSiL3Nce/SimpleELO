@@ -10,6 +10,7 @@
 # %simpleelo_elo% -> Returns the ELO of the player                           #
 # %simpleelo_position% -> Returns the position in the top list of the player #
 # %simpleelo_topX% -> Returns the player at that X position in the top       #
+# %simpleelo_topX_elo% -> Returns that player at that X position's ELO       #
 #                                                                            #
 ##############################################################################
 #                                                                            #
@@ -17,5 +18,6 @@
 # {elo} -> Returns the ELO of the player                                     #
 # {position} -> Returns the position in the top list of the player           #
 # {topX} -> Returns the player at that X position in the top                 #
+# {topX_elo} -> Returns that player at that X position's ELO                 #
 #                                                                            #
 ##############################################################################
